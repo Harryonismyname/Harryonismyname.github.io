@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Ben Lance</title>
+    <script>
+        $(document).ready(function()
+        {
+            $("#projects").accordion()
+            $('.colllapse')
+            $("#skills").on("shown.bs.collapse", function () {
+                $('#exp').collapse('hide')
+            })
+            $("#exp").on("shown.bs.collapse", function () {
+                $('#skills').collapse('hide')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="container" class="container-fluid">
+        <div id="header" class="row">
+        
+        </div>
+        <div id="body" class="container-fluid pt-5">
+            <div class="row align-items-start justify-content-center">
+                <div class="col-5 item p-md-3 rounded mb-lg-5">
+                    <img src="img/Portrait.jpg" alt="Portrait" class="rounded-circle mx-auto d-block">
+                    <p class="text-dark">I'm a full Stack developer with an emphasis on backend systems. I enjoy creative problem solving and working hard while having fun.</p>
+                    <p class="btn-group" role="group" aria-label="Basic example">
+                        <button class="btn btn-dark btn-secondary" type="button" data-toggle="collapse" data-target="#skills" aria-expanded="false" aria-controls="skills">Skills</button>
+                        <button class="btn btn-dark btn-secondary" type="button" data-toggle="collapse" data-target="#exp" aria-expanded="false" aria-controls="exp">Experience</button>
+                        <button class="btn btn-dark btn-secondary" type="button" data-toggle="collapse" data-target="#interest" aria-expanded="false" aria-controls="interest">Interests</button>
+                    </p>
+                    <div class="row">
+                        <div class="collapse col-12 p-md-3" id="skills">
+                            <p class="border-top border-dark">This is a list of technologies I have used to the point where I am confident in my ability to use them without assistance.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent text-center">Python</li>
+                                <li class="list-group-item bg-transparent text-center">Django</li>
+                                <li class="list-group-item bg-transparent text-center">Git</li>
+                                <li class="list-group-item bg-transparent text-center">GitHub</li>
+                                <li class="list-group-item bg-transparent text-center">HTML</li>
+                                <li class="list-group-item bg-transparent text-center">CSS</li>
+                                <li class="list-group-item bg-transparent text-center">JavaScript</li>
+                                <li class="list-group-item bg-transparent text-center">jQuery</li>
+                                <li class="list-group-item bg-transparent text-center">Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="collapse col-12 p-md-3" id="exp">
+                            <p class="border-top border-dark">This is a list of technologies I have some experience using, but not enough to qualify as being 'skilled in.'</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent text-center">MySQL</li>
+                                <li class="list-group-item bg-transparent text-center">AWS (Amazon Web Service)</li>
+                                <li class="list-group-item bg-transparent text-center">Unity Engine</li>
+                                <li class="list-group-item bg-transparent text-center">C#</li>
+                            </ul>
+                        </div>
+                        <div class="collapse col-12 p-md-3" id="interest">
+                            <p class="border-top border-dark">
+                                This is a list of technologies I am interested in learning more about and how to use them.
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent">Ajax</li>
+                                <li class="list-group-item bg-transparent">Flask</li>
+                                <li class="list-group-item bg-transparent">Mongo DB</li>
+                                <li class="list-group-item bg-transparent">Java</li>
+                                <li class="list-group-item bg-transparent">Spring Framework</li>
+                                <li class="list-group-item bg-transparent">C</li>
+                                <li class="list-group-item bg-transparent">Kubernetes</li>
+                                <li class="list-group-item bg-transparent">Docker</li>
+                                <li class="list-group-item bg-transparent">.Net</li>
+                                <li class="list-group-item bg-transparent">C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 offset-sm-1 item p-md-3 rounded" id="projects">
+                    <h3 class="text-center p-sm-3 mb-0">Quotes App</h3>
+                    <div class="project">
+                        <h4 class="text-center text-dark">My First Deployed Application</h4>
+                        <p class="text-dark">This is the first app I deployed using AWS (Amazon Web Service). It allows users to register an account and then post quotes for other users to see. Additionally, users can like each other's posts as well as inspect other user's profiles to see all the quotes they have posted. Finally, users can edit their profile to change their displayed name and email address.</p>
+                        <p class="text-dark">You can find it <a href="http://3.16.26.234/" class="btn btn-dark rounded-pill p-sm-2 m-md-1">here</a></p>
+                    </div>
+                    <h3 class="text-center p-sm-3 mb-0">Project Header</h3>
+                    <div class="project">
+                        <h4 class="text-center text-dark">Project title</h4>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga blanditiis, veniam alias temporibus aperiam culpa perspiciatis quidem ea! Exercitationem quidem veritatis eius, commodi omnis illo ducimus quasi totam amet ex?</p>
+                    </div>
+                    <h3 class="text-center p-sm-3 mb-0">Project Header</h3>
+                    <div class="project">
+                        <h4 class="text-center text-dark">Project title</h4>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit numquam eligendi optio illum, ipsam quas consectetur, rerum ut harum corporis corrupti blanditiis soluta excepturi odit natus! Nam, natus molestiae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="row align-items-end justify-content-end">
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a href="https://github.com/Harryonismyname" class="nav-link"><img src="img/Github.png" alt="Github Logo"></a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/ben-lance-6795111a2/" class="nav-link"><img src="img/LinkedIn.png" alt="LinkedIn Logo"></a></li>
+                <li class="nav-item">
+                    <p class="nav-link">309-840-8592</p>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link">benjamindlance@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
