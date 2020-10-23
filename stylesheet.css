@@ -1,0 +1,52 @@
+html, body
+{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+/*Background Colors*/
+#container
+{
+    background: #2C4251;
+}
+#header, #projects h3, .project a, #footer, .btn
+{
+    background-color: #9CAEA9;
+}
+.item, .project
+{
+    background-color: #CCDAD1;
+}
+
+/*Text Colors*/
+#projects h3, #footer
+{
+    color: #2C4251;
+}
+
+#container
+{
+    min-height: 100%;
+    position: relative;
+}
+#header
+{
+    padding:10px;
+}
+#body
+{
+    padding: 10px;
+    padding-bottom: 60px;
+}
+#footer
+{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 60px;
+}
+#footer img
+{
+    height: 25px;
+    width: 25px;
+}
