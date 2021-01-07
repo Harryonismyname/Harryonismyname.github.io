@@ -53,6 +53,9 @@
                                 <li class="list-group-item bg-transparent text-center">JavaScript</li>
                                 <li class="list-group-item bg-transparent text-center">jQuery</li>
                                 <li class="list-group-item bg-transparent text-center">Bootstrap</li>
+                                <li class="list-group-item bg-transparent text-center">Ajax</li>
+                                <li class="list-group-item bg-transparent text-center">Unity Engine</li>
+                                <li class="list-group-item bg-transparent text-center">C#</li>
                             </ul>
                         </div>
                         <div class="collapse col-12 p-md-3" id="exp">
@@ -60,8 +63,6 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item bg-transparent text-center">MySQL</li>
                                 <li class="list-group-item bg-transparent text-center">AWS (Amazon Web Service)</li>
-                                <li class="list-group-item bg-transparent text-center">Unity Engine</li>
-                                <li class="list-group-item bg-transparent text-center">C#</li>
                             </ul>
                         </div>
                         <div class="collapse col-12 p-md-3" id="interest">
@@ -69,7 +70,6 @@
                                 This is a list of technologies I am interested in learning more about and how to use them.
                             </p>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent">Ajax</li>
                                 <li class="list-group-item bg-transparent">Flask</li>
                                 <li class="list-group-item bg-transparent">Mongo DB</li>
                                 <li class="list-group-item bg-transparent">Java</li>
@@ -84,15 +84,28 @@
                     </div>
                 </div>
                 <div class="col-5 offset-sm-1 item p-md-3 rounded" id="projects">
+                    <h3 class="text-center p-sm-3 mb-0">Movement Demo</h3>
+                    <div class="project overflow-auto">
+                        <h4 class="text-center text-dark">Movement In Unity3D</h4>
+                        <p class="text-dark">This is the first project I built in Unity3D. Its primary purpose is to demonstrate the multiple ways in which a developer can mix and match camera and movement types. The current available movement options are:</p>
+                        <ul>
+                            <li><p>Analogue: This movement type is directly translates WASD inputs into fluid movement in corresponding directions. This movement is useful for when the developer wants to help sell a sense of immersion, because the user feels as though they are directly linked to the character's movements. It is commonly seen in first-person-shooters, or other games where users move in smooth linear paths</p></li>
+                            <li><p>Teleport: This movement is where the chraracter moves in incremental jumps based on WASD input. This is especially useful in games that use a grid system, as it allows the character to move to the next tile without the need for a movement animation. This movement type is akin to the movement in games like Crypt of the Necrodancer, Pokemon Mystery Dungeon, and Etrian Oddessy.</p></li>
+                            <li><p>Click-To-Move: With this movement type, the character moves from wherever they are currently standing toward a point on the screen that the user clicks on. This is useful, when the develeoper wants to keep the user's mouse free for menu navigation or to allow for tactical movement planning, like that found in Xcom. This movement type is commonly found in RTS games such as Starcraft 2, Hearts of Iron 4, and Sudden Strike 4. Additionally, it can be found in Top-Down-RPGs like Divinity: Original Sin 2, Balder's Gate 2, and the overworld movement in Mount and Blade. Or even Strategy games like Xcom, or Pheonix Point.</p></li>
+                            <li><p>Tank: This movement is less common, but still a valuable one to have. Simply put, the character can only directly move in two directions, either forward or backwards, using the W and S keys. To alter the course, the user must press the A or D keys to rotate the character on the Y axis. This allows them to pivot their movement into a new direction giving a similar experience to that of piloting a tank. This control scheme is useful for simulating driving tracked vehicles as well as less mobile characters. Common examples of this style can be seen in games like World of Tanks, Arma 3, and in certain instances, Besiege.</p></li>
+                        </ul>
+                        <p>Camera options include:</p>
+                        <ul>
+                            <li><p>Third-Person: This camera angle allows the user to see their character from the back, slightly offset so as to give the impression of looking over the character's shoulder. It is useful for when the developer wants to give the user a wider field of view as well as allow for better angles in game styles such as cover-shooters, and story games where the character is in full camera view so that story elements can be showcased on the character's body. This camera style can be found in games like Gears of War, Mass Effect, and Uncharted. As well as games like Dark Souls, Remnant: From the Ashes, and the Batman Arkham games.</p></li>
+                            <li><p>First-Person: This camera angle allows the user the sense of physical presence in the world, allowing the user to see the world from the eyes of their character. This helps in providing immersion as well as restricting the user's line of sight and field of view. It is commonly found in first-person-shooters, as well as many horror games due to the immersion effect the camera style has. Additionally, this camera angle can be used for narrative purposes like in walking simulators such as Firewatch, The Stanley Parable, and My Dear Esther. Where the First-Person camera gives a sense of presence in the world.</p></li>
+                            <li><p>Top-Down: The way I executed the top-down camera gives more of the impression of a 2D game than that of a top-down 3D game, where the camera floats far above the character's head, with a slight offset so as to prevent camera bugs. This camera angle allows for the greatest field of view of all the camera options, as it gives a fully zoomed out view of the world around the character. This is useful for strategy games, or even maze games like Bomberman.</p></li>
+                            <li><p>Orthographic: Also known as Isometric, this camera angle comes from a diagonal perspective that gives a 2D perspective while still allowing for 3D movements. This style is useful for certain strategy games like Into the Breach, or fast pased games like Hades, as it allows 3D depth and movement, without the need for 3D assets.</p></li>
+                        </ul>
+                    </div>
                     <h3 class="text-center p-sm-3 mb-0">Quotes App</h3>
                     <div class="project overflow-auto">
                         <h4 class="text-center text-dark"><a href="http://3.16.26.234/" class="text-dark">My First Deployed Application</a></h4>
                         <p class="text-dark">This is the first app I deployed using AWS (Amazon Web Service). It allows users to register an account and then post quotes for other users to see. Additionally, users can like each other's posts as well as inspect other user's profiles to see all the quotes they have posted. Finally, users can edit their profile to change their displayed name and email address.</p>
-                    </div>
-                    <h3 class="text-center p-sm-3 mb-0">Project Header</h3>
-                    <div class="project overflow-auto">
-                        <h4 class="text-center text-dark">Project title</h4>
-                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga blanditiis, veniam alias temporibus aperiam culpa perspiciatis quidem ea! Exercitationem quidem veritatis eius, commodi omnis illo ducimus quasi totam amet ex?</p>
                     </div>
                     <h3 class="text-center p-sm-3 mb-0">Project Header</h3>
                     <div class="project overflow-auto">
